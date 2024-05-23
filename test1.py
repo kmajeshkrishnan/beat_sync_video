@@ -27,7 +27,7 @@ screen_width = 1920
 screen_height = 1080
 screen = pygame.display.set_mode((screen_width, screen_height), pygame.FULLSCREEN)
 pygame.display.set_caption('Bass Reactive Logo')
-logo = pygame.image.load('logo0.gif')
+logo = pygame.image.load('logo0.png')
 logo_rect = logo.get_rect(center=(screen_width / 2, screen_height / 2))
 
 running = True
@@ -43,7 +43,7 @@ def perform_action():
     global IMG_COUNTER
     if IMG_COUNTER > 1:
         IMG_COUNTER = 0
-    logo = pygame.image.load(f'logo{IMG_COUNTER}.gif')
+    logo = pygame.image.load(f'logo{IMG_COUNTER}.png')
     logo_rect = logo.get_rect(center=(screen_width / 2, screen_height / 2))
     IMG_COUNTER += 1
     print(IMG_COUNTER)
