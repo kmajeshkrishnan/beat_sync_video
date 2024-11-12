@@ -5,7 +5,7 @@ import time
 import threading, os
 
 import argparse
-parser = argparse.ArgumentParser(description="My Program with Command-line Arguments")
+parser = argparse.ArgumentParser(description="Beat sync pictures")
 
 # Adding arguments
 parser.add_argument("-s", "--sensitivity", type=float, default=0.0000001, help="Set bass sensitivity")
